@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+/* ## Colors Primary ## */
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+/* ## Colors  Neutral ## */
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+/* ## Fonts ## */
+    --main-font: 'Montserrat';
+    --accent-font: 'Fraunces';
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--main-font), 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--Cream);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 343px;
+    background-color: var(--White);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card__header{
+
+}
+.card__image{
+    width: 100%;
+    height: 240px;
+    background-image: url('./images/image-product-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.card__body{
+    padding: 24px;
+}
+.card__category{
+    margin-bottom: 12px;
+    width: fit-content;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 500;
+    letter-spacing: 4.25px;
+    text-transform: uppercase;
+    color: var(--Dark-grayish-blue);
+}
+.card__title{
+    margin-bottom: 16px;
+    font-family: var(--accent-font), Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 700;
+    color: var(--Very-dark-blue);
+}
+.card__description{
+    margin-bottom: 21px;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 1px;
+    color: var(--Dark-grayish-blue);
+}
+.card__prices{
+    margin-bottom: 21px;
+    font-family: var(--accent-font), Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 700;
+    color: var(--Dark-cyan);
+}
+.card__prices span{
+    margin-left: 24px;
+    font-family: var(--main-font), 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+    line-height: 23px;
+    font-weight: 500;
+    text-decoration: line-through;
+    color: var(--Dark-grayish-blue);
+}
+.card__cta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    font-family: var(--main-font), 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    color: var(--White);
+    background-color: var(--Dark-cyan);
+    border: none;
+    border-radius: 8px;
+}
+.card__cta::before{
+    content: ' ';
+    width: 16px;
+    height: 16px;
+    margin-right: 11px;
+    background-image: url('./images/icon-cart.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+.footer__signature{
+    font-size: 11px;
+}
+.footer__signature a{
+    font-size: 11px;
+    color: hsl(228, 45%, 44%);
+}
